@@ -31,20 +31,7 @@ export default function CTASection() {
             </Button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="flex items-center justify-center space-x-3">
-              <Mail className="h-6 w-6 text-blue-400" />
-              <span className="text-gray-300">contact@calispec.ai</span>
-            </div>
-            <div className="flex items-center justify-center space-x-3">
-              <Phone className="h-6 w-6 text-blue-400" />
-              <span className="text-gray-300">+91-7358779184</span>
-            </div>
-            <div className="flex items-center justify-center space-x-3">
-              <Globe2 className="h-6 w-6 text-blue-400" />
-              <span className="text-gray-300">www.calispec.ai</span>
-            </div>
-          </div>
+          {/* Contact details moved to footer */}
         </motion.div>
       </div>
     </section>

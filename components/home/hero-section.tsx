@@ -103,7 +103,7 @@ export default function HeroSection() {
               Management
             </motion.span>{" "}
             <motion.span variants={wordVariants} className="inline-block">
-              for
+              For
             </motion.span>
             <br />
             <motion.span variants={wordVariants} className="inline-block">
@@ -118,9 +118,10 @@ export default function HeroSection() {
             variants={fadeInVariants}
             className="text-xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed"
           >
-            Calispec.ai is a next-generation SaaS platform purpose-built for managing the entire lifecycle of
-            gauges, calibration events, inspection processes, and metrology studies in a single, intelligent interface.
+            Calispec.ai Is a Next-Generation SaaS Platform Purpose-Built for Managing the Entire Lifecycle of
+            Gauges, Calibration Events, Inspection Processes, and Metrology Studies in a Single, Intelligent Interface.
           </motion.p>
+
 
           <motion.div
             variants={containerVariants}

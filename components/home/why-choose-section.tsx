@@ -36,15 +36,15 @@ export default function WhyChooseSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             Purpose-Built for Plants That <span className="text-blue-600">Can't Afford Downtime</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Manufacturers choose Calispec.ai because it goes beyond software — it delivers peace of mind. The platform reduces risks of missed calibrations, failed audits, and costly production stoppages.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -52,12 +52,13 @@ export default function WhyChooseSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
+              className="flex"
             >
               <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardContent className="p-8 text-center">
-                  <feature.icon className={`h-16 w-16 ${feature.color} mx-auto mb-6`} />
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">{feature.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                <CardContent className="p-8 text-center h-full flex flex-col">
+                  <feature.icon className={`h-16 w-16 ${feature.color} mx-auto mb-6 flex-shrink-0`} />
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">{feature.title}</h3>
+                  <p className="text-gray-600 leading-relaxed text-center flex-grow">{feature.description}</p>
                 </CardContent>
               </Card>
             </motion.div>
