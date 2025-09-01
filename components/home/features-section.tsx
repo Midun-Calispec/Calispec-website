@@ -62,20 +62,20 @@ export default function FeaturesSection() {
                   From procurement to retirement — every action is logged, monitored, and reportable.
                 </p>
                 <div className="space-y-3">
-                  <div className="flex items-center p-2 rounded-lg bg-green-50 hover:bg-green-100 transition-colors duration-200">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                  <div className="flex items-center p-2 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors duration-200">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Automated calibration scheduling</span>
                   </div>
-                  <div className="flex items-center p-2 rounded-lg bg-green-50 hover:bg-green-100 transition-colors duration-200">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                  <div className="flex items-center p-2 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors duration-200">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Compliance-ready certificates</span>
                   </div>
-                  <div className="flex items-center p-2 rounded-lg bg-green-50 hover:bg-green-100 transition-colors duration-200">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                  <div className="flex items-center p-2 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors duration-200">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">QR-code traceability</span>
                   </div>
-                  <div className="flex items-center p-2 rounded-lg bg-green-50 hover:bg-green-100 transition-colors duration-200">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                  <div className="flex items-center p-2 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors duration-200">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">IATF 16949, ISO 9001, ISO 17025 ready</span>
                   </div>
                 </div>
@@ -169,9 +169,9 @@ export default function FeaturesSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-center p-3 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-200"
+                  className="flex items-center p-3 rounded-lg bg-purple-50 hover:bg-purple-100 transition-colors duration-200 shadow-md hover:shadow-lg"
                 >
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-purple-600 mr-3 flex-shrink-0" />
                   <span className="text-gray-700">AES-256 encryption</span>
                 </motion.div>
                 <motion.div 
@@ -179,9 +179,9 @@ export default function FeaturesSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                   viewport={{ once: true }}
-                  className="flex items-center p-3 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-200"
+                  className="flex items-center p-3 rounded-lg bg-purple-50 hover:bg-purple-100 transition-colors duration-200 shadow-md hover:shadow-lg"
                 >
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-purple-600 mr-3 flex-shrink-0" />
                   <span className="text-gray-700">2FA authentication</span>
                 </motion.div>
                 <motion.div 
@@ -189,9 +189,9 @@ export default function FeaturesSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 }}
                   viewport={{ once: true }}
-                  className="flex items-center p-3 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-200"
+                  className="flex items-center p-3 rounded-lg bg-purple-50 hover:bg-purple-100 transition-colors duration-200 shadow-md hover:shadow-lg"
                 >
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-purple-600 mr-3 flex-shrink-0" />
                   <span className="text-gray-700">Role-based access</span>
                 </motion.div>
                 <motion.div 
@@ -199,9 +199,9 @@ export default function FeaturesSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
                   viewport={{ once: true }}
-                  className="flex items-center p-3 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-200"
+                  className="flex items-center p-3 rounded-lg bg-purple-50 hover:bg-purple-100 transition-colors duration-200 shadow-md hover:shadow-lg"
                 >
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-purple-600 mr-3 flex-shrink-0" />
                   <span className="text-gray-700">ERP integrations</span>
                 </motion.div>
               </div>

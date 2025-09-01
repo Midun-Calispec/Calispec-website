@@ -32,16 +32,18 @@ export default function AboutSection() {
             viewport={{ once: true }}
             className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-100"
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Why We're Different</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Why We&apos;re Different</h3>
             <div className="space-y-6">
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="flex items-start space-x-4 p-4 rounded-xl bg-green-50 hover:bg-green-100 transition-colors duration-200"
+                className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-green-100 to-emerald-100 hover:from-green-200 hover:to-emerald-200 transition-all duration-200 border border-green-200/50"
               >
-                <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
+                <div className="bg-green-600 p-2 rounded-lg flex-shrink-0">
+                  <CheckCircle className="h-6 w-6 text-white" />
+                </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Real-World Understanding</h4>
                   <p className="text-gray-600">Every feature reflects actual calibration pain points, audit pressures, and operational challenges.</p>
@@ -52,9 +54,11 @@ export default function AboutSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="flex items-start space-x-4 p-4 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors duration-200"
+                className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-blue-100 to-indigo-100 hover:from-blue-200 hover:to-indigo-200 transition-all duration-200 border border-blue-200/50"
               >
-                <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
+                <div className="bg-blue-600 p-2 rounded-lg flex-shrink-0">
+                  <CheckCircle className="h-6 w-6 text-white" />
+                </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Industry 4.0 Ready</h4>
                   <p className="text-gray-600">Futuristic solutions that put metrology systems at the center of operational excellence.</p>
@@ -65,12 +69,14 @@ export default function AboutSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="flex items-start space-x-4 p-4 rounded-xl bg-purple-50 hover:bg-purple-100 transition-colors duration-200"
+                className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-purple-100 to-violet-100 hover:from-purple-200 hover:to-violet-200 transition-all duration-200 border border-purple-200/50"
               >
-                <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
+                <div className="bg-purple-600 p-2 rounded-lg flex-shrink-0">
+                  <CheckCircle className="h-6 w-6 text-white" />
+                </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Proven Expertise</h4>
-                  <p className="text-gray-600">Built by professionals who understand the manufacturing arena's quality requirements.</p>
+                  <p className="text-gray-600">Built by professionals who understand the manufacturing arena&apos;s quality requirements.</p>
                 </div>
               </motion.div>
             </div>

@@ -148,7 +148,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
           className="relative max-w-5xl mx-auto"
         >
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-2xl">
+          <div className="bg-gradient-to-r from-gray-50 via-blue-50 to-indigo-50 rounded-2xl p-8 shadow-2xl border border-gray-200/50">
             <motion.div
               variants={containerVariants}
               initial="hidden"
@@ -157,14 +157,15 @@ export default function HeroSection() {
               className="grid grid-cols-1 md:grid-cols-3 gap-6"
             >
               <motion.div variants={cardVariants}>
-                <Card className="border-0 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <Card className="border-0 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-gradient-to-br from-white to-blue-50">
                   <CardContent className="p-6 text-center">
                     <motion.div
                       initial={{ scale: 0.8, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.3, delay: 0.8 }}
+                      className="bg-blue-100 p-3 rounded-xl w-fit mx-auto mb-4"
                     >
-                      <FileCheck className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                      <FileCheck className="h-12 w-12 text-blue-600" />
                     </motion.div>
                     <h3 className="font-semibold text-gray-900 mb-2">Full Traceability</h3>
                     <p className="text-sm text-gray-600">Complete audit trail from procurement to retirement</p>
@@ -173,14 +174,15 @@ export default function HeroSection() {
               </motion.div>
 
               <motion.div variants={cardVariants}>
-                <Card className="border-0 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <Card className="border-0 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-gradient-to-br from-white to-green-50">
                   <CardContent className="p-6 text-center">
                     <motion.div
                       initial={{ scale: 0.8, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.3, delay: 0.9 }}
+                      className="bg-green-100 p-3 rounded-xl w-fit mx-auto mb-4"
                     >
-                      <BarChart3 className="h-12 w-12 text-green-600 mx-auto mb-4" />
+                      <BarChart3 className="h-12 w-12 text-green-600" />
                     </motion.div>
                     <h3 className="font-semibold text-gray-900 mb-2">AI Predictions</h3>
                     <p className="text-sm text-gray-600">Prevent failures with predictive analytics</p>
@@ -189,14 +191,15 @@ export default function HeroSection() {
               </motion.div>
 
               <motion.div variants={cardVariants}>
-                <Card className="border-0 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <Card className="border-0 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-gradient-to-br from-white to-orange-50">
                   <CardContent className="p-6 text-center">
                     <motion.div
                       initial={{ scale: 0.8, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.3, delay: 1.0 }}
+                      className="bg-orange-100 p-3 rounded-xl w-fit mx-auto mb-4"
                     >
-                      <Clock className="h-12 w-12 text-orange-600 mx-auto mb-4" />
+                      <Clock className="h-12 w-12 text-orange-600" />
                     </motion.div>
                     <h3 className="font-semibold text-gray-900 mb-2">Real-time Alerts</h3>
                     <p className="text-sm text-gray-600">Never miss a calibration deadline again</p>
