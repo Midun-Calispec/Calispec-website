@@ -1,6 +1,7 @@
 "use client";
 
-import { Gauge } from "lucide-react";
+import { Gauge, Mail, Phone, Globe, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -10,19 +11,45 @@ export default function Footer() {
           {/* Logo Section */}
           <div className="md:col-span-1">
             <div className="bg-white rounded-lg p-3 inline-block mb-4">
-              <img
+              <Image
                 src="https://res.cloudinary.com/dyj3rywju/image/upload/v1753528568/calispec_transparent_1_sez0aw.png"
                 alt="Calispec.ai"
                 className="h-12 w-auto object-contain"
+                width={100}
+                height={100}
               />
             </div>
-            <p className="text-gray-500 text-sm max-w-xs">
+            <p className="text-gray-500 text-sm max-w-xs mb-6">
               Reimagining gauge management for modern manufacturing with cutting-edge technology and precision.
             </p>
+            {/* Social Media Icons */}
+            <div className="flex space-x-4">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Facebook size={20} />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Twitter size={20} />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Linkedin size={20} />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Instagram size={20} />
+              </a>
+            </div>
           </div>
 
-          {/* Empty column for spacing */}
-          <div className="hidden lg:block"></div>
+          {/* Pages Section */}
+          <div>
+            <h3 className="text-white font-semibold mb-6 text-lg">Pages</h3>
+            <nav className="flex flex-col space-y-3">
+              <a href="/" className="text-gray-400 hover:text-white transition-colors text-sm">Home</a>
+              <a href="/about" className="text-gray-400 hover:text-white transition-colors text-sm">About Us</a>
+              <a href="/features" className="text-gray-400 hover:text-white transition-colors text-sm">Features</a>
+              <a href="/pricing" className="text-gray-400 hover:text-white transition-colors text-sm">Pricing</a>
+              <a href="/contact" className="text-gray-400 hover:text-white transition-colors text-sm">Contact</a>
+            </nav>
+          </div>
 
           {/* Legal Section */}
           <div>
@@ -39,25 +66,33 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-6 text-lg">Contact Us</h3>
             <div className="space-y-3 text-sm">
               <p className="text-gray-300 font-medium">Calispec Private Limited</p>
-              <p className="text-gray-400">136, 1st Cross, 5th Block</p>
-              <p className="text-gray-400">Koramangala, Bangalore - 560034</p>
+              <div className="flex items-start space-x-2">
+                <MapPin size={16} className="text-gray-400 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-gray-400">136, 1st Cross, 5th Block</p>
+                  <p className="text-gray-400">Koramangala, Bangalore - 560034</p>
+                </div>
+              </div>
               
-              <div className="pt-2 space-y-2">
-                <p className="text-gray-400">
+              <div className="pt-2 space-y-3">
+                <div className="flex items-center space-x-2">
+                  <Mail size={16} className="text-gray-400" />
                   <a href="mailto:support@calispec.ai" className="text-blue-400 hover:text-blue-300 transition-colors">
                     support@calispec.ai
                   </a>
-                </p>
-                <p className="text-gray-400">
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Phone size={16} className="text-gray-400" />
                   <a href="tel:+917358779184" className="hover:text-gray-300 transition-colors">
                     +91-7358779184
                   </a>
-                </p>
-                <p className="text-gray-400">
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Globe size={16} className="text-gray-400" />
                   <a href="https://www.calispec.ai" target="_blank" rel="noreferrer" className="hover:text-gray-300 transition-colors">
                     www.calispec.ai
                   </a>
-                </p>
+                </div>
               </div>
             </div>
           </div>

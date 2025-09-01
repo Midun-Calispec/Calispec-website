@@ -54,9 +54,17 @@ export default function WhyChooseSection() {
               viewport={{ once: true }}
               className="flex"
             >
-              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card className="h-full border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-white to-gray-50 group">
                 <CardContent className="p-8 text-center h-full flex flex-col">
-                  <feature.icon className={`h-16 w-16 ${feature.color} mx-auto mb-6 flex-shrink-0`} />
+                  <motion.div
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 + 0.3 }}
+                    viewport={{ once: true }}
+                    className="bg-white rounded-2xl p-4 shadow-lg mb-6 mx-auto inline-block group-hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <feature.icon className={`h-16 w-16 ${feature.color} flex-shrink-0`} />
+                  </motion.div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">{feature.title}</h3>
                   <p className="text-gray-600 leading-relaxed text-center flex-grow">{feature.description}</p>
                 </CardContent>

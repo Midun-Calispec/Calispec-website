@@ -20,6 +20,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
+          {/* Logo - Left side */}
           <div className="flex items-center">
             <img 
               src="https://res.cloudinary.com/dyj3rywju/image/upload/v1753528568/calispec_transparent_1_sez0aw.png" 
@@ -28,8 +29,8 @@ export default function Navbar() {
             />
           </div>
           
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
             {navItems.map((item) => (
               <a 
                 key={item.href}
@@ -39,6 +40,10 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
+          </div>
+
+          {/* Get Started Button - Right side */}
+          <div className="hidden md:flex items-center">
             <Button className="bg-blue-600 hover:bg-blue-700">Get Started</Button>
           </div>
 
