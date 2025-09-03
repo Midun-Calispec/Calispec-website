@@ -39,12 +39,18 @@ export default function FeaturesSection() {
             viewport={{ once: true }}
             className="flex"
           >
-            <Card className="w-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="w-full border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-blue-50">
               <CardContent className="p-8 h-full flex flex-col">
                 <div className="flex items-start mb-6">
-                  <div className="flex-shrink-0 mr-4">
+                  <motion.div 
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    viewport={{ once: true }}
+                    className="flex-shrink-0 mr-4 bg-blue-100 p-3 rounded-xl"
+                  >
                     <Shield className="h-12 w-12 text-blue-600" />
-                  </div>
+                  </motion.div>
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 leading-tight">
                       Full Traceability & Compliance
@@ -56,20 +62,20 @@ export default function FeaturesSection() {
                   From procurement to retirement — every action is logged, monitored, and reportable.
                 </p>
                 <div className="space-y-3">
-                  <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                  <div className="flex items-center p-2 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors duration-200">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Automated calibration scheduling</span>
                   </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                  <div className="flex items-center p-2 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors duration-200">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Compliance-ready certificates</span>
                   </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                  <div className="flex items-center p-2 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors duration-200">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">QR-code traceability</span>
                   </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                  <div className="flex items-center p-2 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors duration-200">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">IATF 16949, ISO 9001, ISO 17025 ready</span>
                   </div>
                 </div>
@@ -85,12 +91,18 @@ export default function FeaturesSection() {
             viewport={{ once: true }}
             className="flex"
           >
-            <Card className="w-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="w-full border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-green-50">
               <CardContent className="p-8 h-full flex flex-col">
                 <div className="flex items-start mb-6">
-                  <div className="flex-shrink-0 mr-4">
+                  <motion.div 
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                    viewport={{ once: true }}
+                    className="flex-shrink-0 mr-4 bg-green-100 p-3 rounded-xl"
+                  >
                     <TrendingUp className="h-12 w-12 text-green-600" />
-                  </div>
+                  </motion.div>
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 leading-tight">
                       MSA & Predictive Intelligence
@@ -98,22 +110,22 @@ export default function FeaturesSection() {
                   </div>
                 </div>
                 <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
-                  Built-in MSA suite aligned with AIAG MSA 4.0 standards. AI models don't just record what happened — they predict what might happen.
+                  Built-in MSA suite aligned with AIAG MSA 4.0 standards. AI models don&apos;t just record what happened — they predict what might happen.
                 </p>
                 <div className="space-y-3">
-                  <div className="flex items-center">
+                  <div className="flex items-center p-2 rounded-lg bg-green-50 hover:bg-green-100 transition-colors duration-200">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Bias, Linearity, GRR, Stability studies</span>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-center p-2 rounded-lg bg-green-50 hover:bg-green-100 transition-colors duration-200">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Statistical calculations & reports</span>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-center p-2 rounded-lg bg-green-50 hover:bg-green-100 transition-colors duration-200">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">AI-driven predictions</span>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-center p-2 rounded-lg bg-green-50 hover:bg-green-100 transition-colors duration-200">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Equipment reliability insights</span>
                   </div>
@@ -129,60 +141,116 @@ export default function FeaturesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl p-8 lg:p-12"
+          className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-3xl p-8 lg:p-12 shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-200/50"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <div className="flex items-center mb-6">
-                <Lock className="h-12 w-12 text-purple-600 mr-4 flex-shrink-0" />
+                <motion.div
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  viewport={{ once: true }}
+                  className="bg-purple-100 p-3 rounded-xl mr-4 flex-shrink-0"
+                >
+                  <Lock className="h-12 w-12 text-purple-600" />
+                </motion.div>
                 <h3 className="text-2xl font-bold text-gray-900">
                   Security & Scalability
                 </h3>
               </div>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-                Enterprise-grade security, yet incredibly simple to use. Whether you're running a single plant 
+                Enterprise-grade security, yet incredibly simple to use. Whether you&apos;re running a single plant 
                 or multiple global facilities, Calispec scales effortlessly.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex items-center p-3 rounded-lg bg-purple-50 hover:bg-purple-100 transition-colors duration-200 shadow-md hover:shadow-lg"
+                >
+                  <CheckCircle className="h-5 w-5 text-purple-600 mr-3 flex-shrink-0" />
                   <span className="text-gray-700">AES-256 encryption</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                </motion.div>
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  viewport={{ once: true }}
+                  className="flex items-center p-3 rounded-lg bg-purple-50 hover:bg-purple-100 transition-colors duration-200 shadow-md hover:shadow-lg"
+                >
+                  <CheckCircle className="h-5 w-5 text-purple-600 mr-3 flex-shrink-0" />
                   <span className="text-gray-700">2FA authentication</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                </motion.div>
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  viewport={{ once: true }}
+                  className="flex items-center p-3 rounded-lg bg-purple-50 hover:bg-purple-100 transition-colors duration-200 shadow-md hover:shadow-lg"
+                >
+                  <CheckCircle className="h-5 w-5 text-purple-600 mr-3 flex-shrink-0" />
                   <span className="text-gray-700">Role-based access</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                </motion.div>
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  viewport={{ once: true }}
+                  className="flex items-center p-3 rounded-lg bg-purple-50 hover:bg-purple-100 transition-colors duration-200 shadow-md hover:shadow-lg"
+                >
+                  <CheckCircle className="h-5 w-5 text-purple-600 mr-3 flex-shrink-0" />
                   <span className="text-gray-700">ERP integrations</span>
-                </div>
+                </motion.div>
               </div>
             </div>
             <div className="flex justify-center lg:justify-end">
-              <div className="bg-white rounded-xl p-6 shadow-lg max-w-sm w-full">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl p-6 shadow-2xl hover:shadow-3xl transition-shadow duration-300 max-w-sm w-full border border-gray-100"
+              >
                 <div className="flex items-center justify-between mb-6">
                   <h4 className="font-semibold text-gray-900">Global Deployment</h4>
                   <Globe className="h-6 w-6 text-blue-600" />
                 </div>
                 <div className="space-y-4">
-                  <div className="flex justify-between items-center py-2">
+                  <motion.div 
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, delay: 0.5 }}
+                    viewport={{ once: true }}
+                    className="flex justify-between items-center py-3 px-3 rounded-lg bg-green-50 hover:bg-green-100 transition-colors duration-200"
+                  >
                     <span className="text-sm text-gray-600 font-medium">Single Plant</span>
-                    <Badge variant="secondary" className="bg-green-100 text-green-800">Ready</Badge>
-                  </div>
-                  <div className="flex justify-between items-center py-2">
+                    <Badge variant="secondary" className="bg-green-100 text-green-800 shadow-sm">Ready</Badge>
+                  </motion.div>
+                  <motion.div 
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, delay: 0.6 }}
+                    viewport={{ once: true }}
+                    className="flex justify-between items-center py-3 px-3 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors duration-200"
+                  >
                     <span className="text-sm text-gray-600 font-medium">Multiple Facilities</span>
-                    <Badge variant="secondary" className="bg-blue-100 text-blue-800">Scalable</Badge>
-                  </div>
-                  <div className="flex justify-between items-center py-2">
+                    <Badge variant="secondary" className="bg-blue-100 text-blue-800 shadow-sm">Scalable</Badge>
+                  </motion.div>
+                  <motion.div 
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, delay: 0.7 }}
+                    viewport={{ once: true }}
+                    className="flex justify-between items-center py-3 px-3 rounded-lg bg-purple-50 hover:bg-purple-100 transition-colors duration-200"
+                  >
                     <span className="text-sm text-gray-600 font-medium">Global Operations</span>
-                    <Badge variant="secondary" className="bg-purple-100 text-purple-800">Enterprise</Badge>
-                  </div>
+                    <Badge variant="secondary" className="bg-purple-100 text-purple-800 shadow-sm">Enterprise</Badge>
+                  </motion.div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </motion.div>
