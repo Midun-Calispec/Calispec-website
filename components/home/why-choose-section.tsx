@@ -27,7 +27,7 @@ export default function WhyChooseSection() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="why-choose-us" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 60 }}
@@ -37,7 +37,7 @@ export default function WhyChooseSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Purpose-Built for Plants That <span className="text-blue-600">Can't Afford Downtime</span>
+            Why Manufacturers <span className="text-blue-600">Choose Us</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Manufacturers choose Calispec.ai because it goes beyond software — it delivers peace of mind. The platform reduces risks of missed calibrations, failed audits, and costly production stoppages.

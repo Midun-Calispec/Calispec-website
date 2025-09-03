@@ -11,8 +11,10 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navItems = [
+    { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#features", label: "Features" },
+    { href: "#why-choose-us", label: "Why Choose Us" },
     { href: "#pricing", label: "Pricing" },
   ];
 
@@ -20,6 +22,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
+          {/* Logo */}
           <div className="flex items-center">
             <img 
               src="https://res.cloudinary.com/dyj3rywju/image/upload/v1753528568/calispec_transparent_1_sez0aw.png" 
@@ -28,7 +31,7 @@ export default function Navbar() {
             />
           </div>
           
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - Centered */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a 
@@ -39,6 +42,10 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
+          </div>
+
+          {/* Get Started Button */}
+          <div className="hidden md:block">
             <Button className="bg-blue-600 hover:bg-blue-700">Get Started</Button>
           </div>
 
