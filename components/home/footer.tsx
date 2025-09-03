@@ -43,11 +43,11 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-6 text-lg">Pages</h3>
             <nav className="flex flex-col space-y-3">
-              <a href="/" className="text-gray-400 hover:text-white transition-colors text-sm">Home</a>
-              <a href="/about" className="text-gray-400 hover:text-white transition-colors text-sm">About Us</a>
-              <a href="/features" className="text-gray-400 hover:text-white transition-colors text-sm">Features</a>
-              <a href="/pricing" className="text-gray-400 hover:text-white transition-colors text-sm">Pricing</a>
-              <a href="/contact" className="text-gray-400 hover:text-white transition-colors text-sm">Contact</a>
+              <a href="#home" className="text-gray-400 hover:text-white transition-colors text-sm">Home</a>
+              <a href="#about" className="text-gray-400 hover:text-white transition-colors text-sm">About</a>
+              <a href="#features" className="text-gray-400 hover:text-white transition-colors text-sm">Features</a>
+              <a href="#why-choose-us" className="text-gray-400 hover:text-white transition-colors text-sm">Why Choose Us</a>
+              <a href="#pricing" className="text-gray-400 hover:text-white transition-colors text-sm">Pricing</a>
             </nav>
           </div>
 
