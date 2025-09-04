@@ -49,6 +49,8 @@ export default function ContactUs() {
     message: ""
   });
 
+  const [result, setResult] = useState("");
+
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({
       ...prev,
@@ -56,10 +58,60 @@ export default function ContactUs() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+    setResult("Sending....");
+    
+    const formDataToSend = new FormData();
+    
+    // Add all form fields to FormData
+    formDataToSend.append("firstName", formData.firstName);
+    formDataToSend.append("lastName", formData.lastName);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("phone", formData.phone);
+    formDataToSend.append("company", formData.company);
+    formDataToSend.append("country", formData.country);
+    formDataToSend.append("address", formData.address);
+    formDataToSend.append("city", formData.city);
+    formDataToSend.append("zipCode", formData.zipCode);
+    formDataToSend.append("hearAbout", formData.hearAbout);
+    formDataToSend.append("message", formData.message);
+    
+    // Add Web3Forms access key
+    formDataToSend.append("access_key", "4d376333-770c-4b9e-9a48-01abd6fb235c");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formDataToSend
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        // Reset form
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          company: "",
+          country: "",
+          address: "",
+          city: "",
+          zipCode: "",
+          hearAbout: "",
+          message: ""
+        });
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setResult("An error occurred while submitting the form. Please try again.");
+    }
   };
 
   const countries = [
@@ -382,6 +434,19 @@ export default function ContactUs() {
                         <Send className="mr-2 h-5 w-5" />
                         Send Message
                       </Button>
+                      
+                      {/* Result Message */}
+                      {result && (
+                        <div className={`mt-4 p-4 rounded-lg text-center font-medium ${
+                          result === "Form Submitted Successfully" 
+                            ? "bg-green-100 text-green-800 border border-green-200" 
+                            : result === "Sending...."
+                            ? "bg-blue-100 text-blue-800 border border-blue-200"
+                            : "bg-red-100 text-red-800 border border-red-200"
+                        }`}>
+                          {result}
+                        </div>
+                      )}
                     </div>
                   </form>
                 </CardContent>
