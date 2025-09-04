@@ -22,12 +22,16 @@ export default function CTASection() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
-              Book a Demo
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
+              <a href="/contact-us">
+                Book a Demo
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-gray-400 text-black">
-              Talk to an Expert
+            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-4 border-gray-400 text-black">
+              <a href="/contact-us">
+                Talk to an Expert
+              </a>
             </Button>
           </div>
 

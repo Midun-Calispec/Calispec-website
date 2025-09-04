@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <div className="bg-white rounded-lg p-3 inline-block mb-4">
               <Image
-                src="https://res.cloudinary.com/dyj3rywju/image/upload/v1753528568/calispec_transparent_1_sez0aw.png"
+                src="/calispec_logo.png"
                 alt="Calispec.ai"
                 className="h-12 w-auto object-contain"
                 width={100}

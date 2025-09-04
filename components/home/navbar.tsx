@@ -25,7 +25,7 @@ export default function Navbar() {
           {/* Logo - Left side */}
           <div className="flex items-center">
             <img 
-              src="https://res.cloudinary.com/dyj3rywju/image/upload/v1753528568/calispec_transparent_1_sez0aw.png" 
+              src="/calispec_logo.png" 
               alt="Calispec.ai" 
               className="h-12 w-28 object-contain md:h-16 md:w-full"
             />
