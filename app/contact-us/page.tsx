@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -12,7 +12,7 @@ import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
 import Navbar from "@/components/home/navbar";
 import Footer from "@/components/home/footer";
 
-const fadeInVariants = {
+const fadeInVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
@@ -24,7 +24,7 @@ const fadeInVariants = {
   }
 };
 
-const staggerVariants = {
+const staggerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
