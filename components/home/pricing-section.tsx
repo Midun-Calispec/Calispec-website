@@ -76,9 +76,11 @@ export default function PricingSection() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4 shadow-xl hover:shadow-2xl transition-all duration-300">
-              Get Custom Quote
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4 shadow-xl hover:shadow-2xl transition-all duration-300">
+              <a href="/contact-us">
+                Get Custom Quote
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
           </motion.div>
         </motion.div>

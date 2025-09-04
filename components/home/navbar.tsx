@@ -11,7 +11,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navItems = [
-    { href: "#home", label: "Home" },
+    { href: "/", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#features", label: "Features" },
     { href: "#why-choose-us", label: "Why Choose Us" },
@@ -44,9 +44,11 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Get Started Button - Right side */}
+          {/* Contact Us Button - Right side */}
           <div className="hidden md:flex items-center">
-            <Button className="bg-blue-600 hover:bg-blue-700">Get Started</Button>
+            <Button asChild className="bg-blue-600 hover:bg-blue-700">
+              <a href="/contact-us">Contact Us</a>
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -82,8 +84,8 @@ export default function Navbar() {
                   </a>
                 ))}
                 <div className="px-3 py-2">
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                    Get Started
+                  <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
+                    <a href="/contact-us">Contact Us</a>
                   </Button>
                 </div>
               </div>
