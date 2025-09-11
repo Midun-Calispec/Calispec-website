@@ -189,7 +189,8 @@ export default function ContactUs() {
                       </div>
                       <div>
                         <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                        <p className="text-gray-600 text-sm">+91-7358779184</p>
+                        <p className="text-gray-600 text-sm">+91 73587 79184</p>
+                        <p className="text-gray-600 text-sm">+91 89258 26252</p>
                         <a href="tel:+917358779184" className="text-blue-600 hover:text-blue-700 text-sm">
                           Call us now
                         </a>
@@ -224,8 +225,7 @@ export default function ContactUs() {
                       <div>
                         <h3 className="font-semibold text-gray-900 mb-1">Business Hours</h3>
                         <p className="text-gray-600 text-sm">
-                          Monday - Friday: 9:00 AM - 6:00 PM<br />
-                          Saturday: 10:00 AM - 4:00 PM
+                          Monday - Saturday: 9:00 AM - 6:00 PM<br />
                         </p>
                       </div>
                     </div>
