@@ -5,9 +5,32 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Calispec.ai - Reimagining Gauge Management for Modern Manufacturing',
-  description: 'Next-generation SaaS platform for managing gauges, calibration events, inspection processes, and metrology studies. Built for Industry 4.0 with AI predictions and full traceability.',
-  keywords: 'gauge management, calibration, metrology, manufacturing, Industry 4.0, MSA, quality control',
+  metadataBase: new URL('https://www.calispec.ai'),
+  title: 'Calispec.ai | Gauge Management SaaS for Manufacturing',
+  description: 'Calispec.ai is a next-gen SaaS platform for gauge management, calibration, MSA studies, and compliance automation for modern manufacturing.',
+  keywords: 'gauge management, calibration software, metrology SaaS, IATF 16949 compliance, MSA studies, quality 4.0',
+  openGraph: {
+    title: 'Calispec.ai - Next-Gen Gauge Management SaaS',
+    description: 'Transform your gauge management with predictive AI, built-in MSA, and full compliance traceability.',
+    url: 'https://www.calispec.ai',
+    siteName: 'Calispec.ai',
+    images: [
+      {
+        url: 'https://www.calispec.ai/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Calispec.ai - Next-Gen Gauge Management SaaS',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Calispec.ai - Next-Gen Gauge Management SaaS',
+    description: 'Transform your gauge management with predictive AI, built-in MSA, and full compliance traceability.',
+    images: ['https://www.calispec.ai/og-image.png'],
+  },
 };
 
 export default function RootLayout({
